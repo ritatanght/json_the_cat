@@ -14,7 +14,7 @@ const fetchBreedDescription = (breedName, callback) => {
       }
       const data = JSON.parse(body);
       if (data.length === 0) {
-        callback(null, "No matching result...");
+        callback("No matching result...", null);
         //console.log("No matching result...");
       } else {
         // printing out the 1st item's description property
